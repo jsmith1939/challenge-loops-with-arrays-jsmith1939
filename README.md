@@ -28,3 +28,4 @@ What are the advantages and disadvantages of using various JS methods instead of
 
 _(Put your reflection answer here.)_
 
+The benefits for using unit test case is so that you can make sure your code is functioning with no errors. And there shouldn't be any drawbacks.

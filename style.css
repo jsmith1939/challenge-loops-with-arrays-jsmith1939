@@ -1,1 +1,6 @@
 /* Write your CSS here */
+.blue-box {
+	height: 20px;
+	width: 100px;
+	background: blue;
+}
