@@ -147,11 +147,13 @@ console.assert(challenge10() !== sampleArray, 'Not the same array');
 
 function challenge11() {
 	newArray = [];
-	for (let i = 1; i < number; i++) {
-		newArray.push(i);
-		array = JSON.stringify(newArray.filter((i) => i % 3 === 0 || i % 7 === 0));
+	for (let i = 100; i > 0; i--) {
+		if (i % 3 === 0 || i % 7 === 0) {
+			newArray.push(i);
+		}
 	}
-	render(array, 11);
+	render(newArray, 11);
+	return newArray;
 }
 challenge11();
 console.assert(
