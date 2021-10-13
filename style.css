@@ -1,6 +1,19 @@
 /* Write your CSS here */
 .blue-box {
+	display: flex;
+	margin: 2px;
+	flex-direction: row;
+	justify-content: space-between;
 	height: 20px;
 	width: 100px;
 	background: blue;
+}
+.orange-box {
+	display: flex;
+	margin: 2px;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 20px;
+	width: 100px;
+	background: orange;
 }
