@@ -260,14 +260,54 @@ console.assert(
 // Advanced Challenge
 // Your Code here:
 
-function display20Boxes() {
-	let row = document.createElement('div');
-	for (let i = 0; i < 20; i++) {
+let row = document.createElement('div');
+
+// render(row);
+document.body.append(row);
+let styleDiv = document.querySelector('.blue-box');
+for (let i = 0; i <= 20; i++) {
+	let divBox = document.createElement('div');
+	divBox.className = 'blue-box';
+	console.log(styleDiv);
+	row.append(divBox);
+}
+for (let i = 0; i <= 20; i++) {
+	let divBox = document.createElement('div');
+	divBox.className = 'blue-box';
+	console.log(styleDiv);
+	divBox.style.width = 100 + i * 5 + 'px';
+	row.append(divBox);
+}
+for (let i = 0; i < sampleArray.length; i++) {
+	let divBox = document.createElement('div');
+	divBox.className = 'blue-box';
+	console.log(styleDiv);
+	divBox.style.width = sampleArray[i] + 'px';
+	row.append(divBox);
+}
+document.body.append(row);
+for (let i = 0; i <= sampleArray.length; i++) {
+	if (i % 2 === 0) {
+		let divBox = document.createElement('div');
+		divBox.className = 'orange-box';
+		console.log(styleDiv);
+		divBox.style.width = sampleArray[i] + 'px';
+		row.append(divBox);
+	} else {
 		let divBox = document.createElement('div');
 		divBox.className = 'blue-box';
+		console.log(styleDiv);
+		divBox.style.width = sampleArray[i] + 'px';
 		row.append(divBox);
 	}
-	// render(row);
-	document.body.append(row);
 }
-display20Boxes();
+
+for (let i = 0; i <= sampleArray.length; i++) {
+	if (i % 2 === 0) {
+		let divBox = document.createElement('div');
+		divBox.className = 'orange-box';
+		console.log(styleDiv);
+		divBox.style.width = sampleArray[i] + 'px';
+		row.append(divBox);
+	}
+}
