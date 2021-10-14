@@ -265,13 +265,13 @@ let row = document.createElement('div');
 // render(row);
 document.body.append(row);
 let styleDiv = document.querySelector('.blue-box');
-for (let i = 0; i <= 20; i++) {
+for (let i = 0; i < 20; i++) {
 	let divBox = document.createElement('div');
 	divBox.className = 'blue-box';
 	console.log(styleDiv);
 	row.append(divBox);
 }
-for (let i = 0; i <= 20; i++) {
+for (let i = 0; i < 20; i++) {
 	let divBox = document.createElement('div');
 	divBox.className = 'blue-box';
 	console.log(styleDiv);
@@ -301,11 +301,16 @@ for (let i = 0; i <= sampleArray.length; i++) {
 		row.append(divBox);
 	}
 }
-
 for (let i = 0; i <= sampleArray.length; i++) {
-	if (i % 2 === 0) {
+	if (sampleArray[i] % 2 === 0) {
 		let divBox = document.createElement('div');
 		divBox.className = 'orange-box';
+		console.log(styleDiv);
+		divBox.style.width = sampleArray[i] + 'px';
+		row.append(divBox);
+	} else {
+		let divBox = document.createElement('div');
+		divBox.className = 'blue-box';
 		console.log(styleDiv);
 		divBox.style.width = sampleArray[i] + 'px';
 		row.append(divBox);
